@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Recrutamento e seleção</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!--Jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--Script-->
+   <script src="./js/scripts.js"></script>
+    
+
+</head>
+<body>
+    
+    <form onsubmit="handleForm()" action="#" >
+        <h1>Inscreva-se</h1>
+        <label>Nome completo</label>
+        <input id="nomeCompleto"
+               type="text"
+               placeholder="Nome completo"
+               data-toggle="tooltip"
+               title="Weverson Barbosa de Lima"
+               onchange="handleNomeCompleto()"
+               />
+        <label>CPF</label>
+        <input id="cpf"
+               type="text"
+               placeholder="CPF"
+               data-toggle="CPF"
+               title="701.611.541-07"
+               onchange="handleCpf()"
+               />
+        <label>Data de nascimento</label>
+        <input id="dataNascimento" 
+            type="date"
+             placeholder="Data de nascimento"
+             data-toggle="tooltip"
+             title="27/12/1996"
+             onchange="handleDataNascimento()"
+             />
+        <label>Endereço</label>
+        <input  id="endereco"
+                type="text"
+                placeholder="Endereço"
+                data-toggle="tooltip"
+                title="Endereço"
+                onchange="handleEndereco()"
+                />
+        <label>Contato</label>
+        <input  id="contato"
+                type="text"
+                placeholder="Contato"
+                data-toggle="tooltip"
+                title="62 9 94999627"
+                onchange="handleContato()"
+                />
+
+        <div class="groupRadio">
+            <input type="radio" id="tipoContatoWhatsApp" value="Whastapp">
+            <label for="tipoContato">Whastapp</label>
+            <input type="radio" id="tipoContatoTeleGram" value="Telegram">
+            <label for="tipoContato">Telegram</label>
+            <input type="radio" id="tipoContatoMesseger" value="Messenger">
+            <label for="tipoContato">Messenger</label>
+        </div>
+        <label>E-mail</label>
+        <input  id="email"
+                type="email"
+                placeholder="E-mail"
+                data-toggle="tooltip"
+                title="weversonbdelima@gmail.com"
+                />
+        <label>Formação e experiência</label>
+        <textarea id="formacaoExperiencia"
+                  placeholder="Formação e experiéncia"
+                  data-toggle="tooltip"
+                  title="Engenharia de Computação"
+        ></textarea>
+
+        <button type="submit">Inscrever-se</button>
+    </form>
+</body>
+</html>
+
